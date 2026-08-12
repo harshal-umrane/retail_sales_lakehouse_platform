@@ -19,23 +19,36 @@ An end-to-end Azure Data Engineering project designed to ingest, process,
 transform, validate, and visualize retail sales data using a modern
 lakehouse architecture.
 
+## Github Folder Structure
+
+RETAIL_SALES_LAKEHOUSE_PLATFORM
+│
+├── architecture/
+│   ├── Retail_Sales.drawio
+│   └── Retail_Sales.jpg
+│
+├── datasets/
+│   ├── customer_data/
+│   ├── orders_data/
+│   └── products_data/
+│
+├── docs/
+│   └── RETAIL SALES LAKEHOUSE PLATFORM.docx
+│
+├── notebooks/
+│   ├── customers/
+│   ├── orders/
+│   └── products/
+│
+├── visualization/
+│   ├── Retail_Sales_Analysis.pbix
+│   └── Retail_Sales_Analysis.pdf
+│
+└── README.md
+
 ## Architecture
 
-PostgreSQL
-    ↓
-Azure Data Factory
-    ↓
-Azure Data Lake Storage Gen2
-    ↓
-Bronze Layer
-    ↓
-Azure Databricks
-    ↓
-Silver Layer
-    ↓
-Gold Layer
-    ↓
-Power BI
+![Retail Sales](architecture/Retail_Sales.png)
 
 ## Technology Stack
 
@@ -58,3 +71,17 @@ Power BI
 - Performed data validation and reconciliation of processed datasets.
 - Built Power BI dashboards for customer and sales analysis.
 - Implemented interactive filtering and KPI-based reporting.
+
+## Power BI Dashboard
+
+### Executive Dashboard
+
+![Executive Dashboard](screenshots/dashboard.jpeg)
+
+### Customer Analysis
+
+![Customer Analysis](screenshots/customer_analysis.jpeg)
+
+### Sales Analysis
+
+![Sales Analysis](screenshots/sales_analysis.jpeg)
